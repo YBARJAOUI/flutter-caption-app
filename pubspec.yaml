@@ -1,0 +1,37 @@
+name: detectioncaption
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.0
+  http: ^1.2.1
+  translator: ^1.0.3
+  flutter_tts: ^3.0.0
+  flutter_native_splash: ^2.2.14
+
+flutter_native_splash:
+  color: "#ffffff" # Couleur de fond (par exemple : blanc)
+  image: assets/splash.png # Chemin vers votre image de splash
+  android: true
+  ios: true
+  web: false
+
+  android_gravity: fill # Remplit tout l'écran
+  ios_content_mode: scaleToFill # Ajuste à l'écran
+  fill: true
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/cat.png
